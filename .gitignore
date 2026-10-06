@@ -1,0 +1,23 @@
+# 궤적·에너지·체크포인트 — 용량 때문에 저장소에 넣지 않는다
+*.xtc
+*.trr
+*.edr
+*.cpt
+*.tpr
+*.gro
+*.pdb
+*.dcd
+*.nc
+
+# 중간 산출물
+*.xvg
+*.log
+
+# 파이썬
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

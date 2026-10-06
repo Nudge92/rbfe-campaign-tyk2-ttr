@@ -1,0 +1,15 @@
+; ===== 3블록 레그1: 소멸 원자 방전 · 6창 =====
+free-energy              = yes
+init-lambda-state        = 0
+fep-lambdas              = 0 0 0 0 0 0
+coul-lambdas             = 0 0.2 0.4 0.6 0.8 1
+vdw-lambdas              = 0 0 0 0 0 0
+bonded-lambdas           = 0 0 0 0 0 0
+sc-alpha                 = 0.5
+sc-power                 = 1
+sc-sigma                 = 0.3
+sc-coul                  = no
+nstdhdl                  = 100
+calc-lambda-neighbors    = -1
+dhdl-derivatives         = yes
+separate-dhdl-file       = yes
