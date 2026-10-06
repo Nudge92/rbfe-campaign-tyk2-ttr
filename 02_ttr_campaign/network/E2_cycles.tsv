@@ -1,0 +1,10 @@
+고리	엣지 수	구성 엣지(도는 부호)	닫힘 값 (kcal/mol)	전파 불확실도	출처
+고리1	4	+N13 −N15 −N16 −N14	-13.76888145315488	2.4867901563377024	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리2	3	−N03 +N12 −N02	-2.657265774378585	1.5390950630155953	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리3	3	+N06 +N12 −N05	-0.6099426386233291	1.3004453430206993	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리4	3	+N04 −N09 +N03	-0.17877629063097533	1.8380457948175644	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리5	3	+N07 −N09 −N06	0.17686424474187423	1.203615421988929	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리6	7	−N10 +N08 −N09 +N12 +N11 −N16 −N14	-0.4382170172084203	6.5324660314906815	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+고리7	3	−N01 +N05 −N02	-3.1543977055449313	1.3069772506947868	sign_verification.json derived(구성·부호) · cycle_localization.json closures·sprop (동결 채점 · N01 n=3)
+앵커 삼각형(N01·N04·N07) · 채택 n=5 판	3	미보유(부호 목록이 이 파일에 없음)	0.8666347992351815	1.1596951399314332	pass1/local_fill_derived.json {tri,sprop} (tri_sigma 0.7472953618538241)
+N17 이 드는 고리	미보유	미보유(구성 엣지 목록이 저장된 파일 없음 · N17_JUDGMENT_MATERIALS_20260928.md §6-6 은 개수만: 17간선 독립 사이클 8)	미계산	미계산	prod_v14 N17 값을 넣은 닫힘 = 저장된 값 없음

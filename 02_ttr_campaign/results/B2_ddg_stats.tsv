@@ -1,0 +1,39 @@
+edge	집합/채점	n	평균 ΔΔG (kcal/mol)	표준편차 s (ddof=1)	SEM	t	95% 하한	95% 상한	출처
+N01	동결 채점(패스1 0.5 ns)	3	-3.867112810707457	0.30804863261410975	0.1778519609632524	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N01	표준 전처리(MBAR·평형검출·상관제거)	3	-4.636187332247497	0.5268529971438775	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N02	동결 채점(패스1 0.5 ns)	5	5.150095602294455	0.8579796610309165	0.3837001690754713	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N02	표준 전처리(MBAR·평형검출·상관제거)	5	4.858990094704898	1.115742500606796	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N03	동결 채점(패스1 0.5 ns)	5	-4.070745697896749	1.0503852088499068	0.4697465459097411	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N03	표준 전처리(MBAR·평형검출·상관제거)	5	-3.8307343561065137	1.1431818116537564	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N04	동결 채점(패스1 0.5 ns)	5	-0.48996175908221784	1.081343147904795	0.4835913571437462	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N04	표준 전처리(MBAR·평형검출·상관제거)	5	-0.5629554727252339	1.253636380793331	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N05	동결 채점(패스1 0.5 ns)	5	-1.8714149139579335	0.9365716603845934	0.4188475796839595	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N05	표준 전처리(MBAR·평형검출·상관제거)	5	-1.861442540166405	0.7510092829656742	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N06	동결 채점(패스1 0.5 ns)	5	-0.9034416826003835	0.5334943184918461	0.2385859123515382	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N06	표준 전처리(MBAR·평형검출·상관제거)	5	-1.0265321338039635	0.983307991313712	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N07	동결 채점(패스1 0.5 ns)	5	-5.1085086042065	0.24139934306308766	0.10795706816257125	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N07	표준 전처리(MBAR·평형검출·상관제거)	5	-4.987390775970191	0.6301596706174735	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N08	동결 채점(패스1 0.5 ns)	4	-4.481955066921608	3.910575197325628	1.955287598662814	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N08	표준 전처리(MBAR·평형검출·상관제거)	4	-4.5486947723897835	3.7667381808810028	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N09	동결 채점(패스1 0.5 ns)	5	-4.381931166347991	1.0515703748942427	0.47027656827769293	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N09	표준 전처리(MBAR·평형검출·상관제거)	5	-3.953668225938171	1.20725756881687	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N10	동결 채점(패스1 0.5 ns)	5	-0.6902485659655853	0.9243365696467813	0.41337588076383436	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N10	표준 전처리(MBAR·평형검출·상관제거)	5	-0.8771884627866129	1.1966092056690583	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N11	동결 채점(패스1 0.5 ns)	5	10.319311663479922	4.632100613135845	2.0715383699180405	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N11	표준 전처리(MBAR·평형검출·상관제거)	5	8.692106349855575	3.8478447271063927	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N12	동결 채점(패스1 0.5 ns)	5	-1.5779158699808793	0.7275819041768362	0.32538451938762875	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N12	표준 전처리(MBAR·평형검출·상관제거)	5	-1.766081383547521	1.1343780832415193	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N13	동결 채점(패스1 0.5 ns)	5	-0.15057361376672987	1.3537834293061253	0.6054303549482554	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N13	표준 전처리(MBAR·평형검출·상관제거)	5	-0.22449366719659308	1.1375573984387066	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N14	동결 채점(패스1 0.5 ns)	4	7.0279636711281075	1.7725488915616419	0.8862744457808209	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N14	표준 전처리(MBAR·평형검출·상관제거)	4	3.787791964590742	1.3905448729063792	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N15	동결 채점(패스1 0.5 ns)	5	3.8484703632887176	0.957502738582845	0.4282082424226904	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N15	표준 전처리(MBAR·평형검출·상관제거)	5	4.302563604229886	1.0873952194981182	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N16	동결 채점(패스1 0.5 ns)	5	2.7418738049713243	0.5409756379211436	0.24193166011259798	미계산	미계산	미계산	final_edges.json {n,dd,sd} · SEM = final_report_20260921/residuals_v2.json 'se'
+N16	표준 전처리(MBAR·평형검출·상관제거)	5	2.5655379214635703	1.510837858265642	미계산	미계산	미계산	미계산	final_report_20260921/preproc_sensitivity.json {n,dec,sd_dec}
+N01	채택 n=5 (동결 채점 방식 · 로컬 보충 포함)	5	-3.751912045889101	0.3425144832392417	미계산	미계산	미계산	미계산	pass1/local_fill_derived.json {dd5,sd5}
+N01	채택 n=5 · MBAR raw	5	-3.7660289632180906	0.3559713583580635	미계산	미계산	미계산	미계산	final_report_20260921/n01_n5_standard.json raw
+N01	채택 n=5 · MBAR 상관제거	5	-4.17283324522661	0.7409964461854551	미계산	미계산	미계산	미계산	final_report_20260921/n01_n5_standard.json dec
+N04	2.0 ns 연장판	5	-0.36950286806883303	0.9797115962609122	미계산	미계산	미계산	미계산	pass1/ext_edges_20260921.json N04
+N17	주 집합 {1,4,5} (등재 σ 정의)	3	1.7246	0.9084	0.5245	4.303	-0.5321	3.9813	prereg.json changelog v31 (b) — S1_tableD.txt 인쇄값(4자리)
+N17	보조 집합 {1,2,3,4,5} (등재 정의 밖)	5	2.0242	0.8164	0.3651	2.776	1.0105	3.0379	prereg.json changelog v31 (b) — S1_tableD.txt 인쇄값(4자리)

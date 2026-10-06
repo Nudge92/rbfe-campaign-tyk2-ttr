@@ -1,0 +1,18 @@
+edge	ΔΔG_exp (kcal/mol)	오차(계산−실험)	값의 출처	문헌 출처(문서 기재)
+N01	0.0	-3.8671128107074564	qsar/src/edge_table_v11.py:26 TRUE · 오차(계산−실험·동결 n=3) = headline.json rows[0].err[0]	Gupta 외, J. Med. Chem. 50, 5589 (2007) Table 1 — REPORT.md §6 기재
+N04	-3.022	2.532038240917782	qsar/src/edge_table_v11.py:26 TRUE · 오차(계산−실험·동결 n=3) = headline.json rows[0].err[1]	Gupta 외, J. Med. Chem. 50, 5589 (2007) Table 1 — REPORT.md §6 기재
+N07	-3.022	-2.0865086042065006	qsar/src/edge_table_v11.py:26 TRUE · 오차(계산−실험·동결 n=3) = headline.json rows[0].err[2]	Gupta 외, J. Med. Chem. 50, 5589 (2007) Table 1 — REPORT.md §6 기재
+N02	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N03	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N05	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N06	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N08	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N09	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N10	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N11	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N12	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N13	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N14	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N15	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N16	미보유	—	edge_table_v11.py TRUE 에 없음	—
+N17	미보유	—	edge_table_v11.py TRUE 에 없음	—

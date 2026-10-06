@@ -1,0 +1,295 @@
+{
+ "n_external": 64,
+ "pIC50_range": [
+  4.9603,
+  6.5575
+ ],
+ "sets": {
+  "tox24_aromatic": {
+   "n_train": 873,
+   "n_leak": 0,
+   "n_external_used": 64,
+   "baseline_rho": -0.0227,
+   "baseline_ci": [
+    -0.2802,
+    0.2478
+   ],
+   "models": {
+    "A1": {
+     "label": "A-Ridge (물성20)",
+     "hp": {
+      "alpha": 1.0
+     },
+     "inner_spearman": 0.4685,
+     "rho": -0.1005,
+     "ci95": [
+      -0.3642,
+      0.1802
+     ],
+     "pred_median": 69.792,
+     "pred_sd": 16.615
+    },
+    "A2": {
+     "label": "A-GP(RBF) (물성20)",
+     "hp": {
+      "alpha": 0.1
+     },
+     "inner_spearman": 0.4825,
+     "rho": -0.1801,
+     "ci95": [
+      -0.4397,
+      0.1057
+     ],
+     "pred_median": 83.663,
+     "pred_sd": 20.105
+    },
+    "A3": {
+     "label": "A-RF d<=4 (물성20)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.6
+     },
+     "inner_spearman": 0.4784,
+     "rho": 0.1757,
+     "ci95": [
+      -0.0787,
+      0.4196
+     ],
+     "pred_median": 74.288,
+     "pred_sd": 8.851
+    },
+    "B1": {
+     "label": "B-KRR (RBF물성 ⊕ Tanimoto 이온화FP)",
+     "hp": {
+      "alpha": 0.1,
+      "w": 0.7
+     },
+     "inner_spearman": 0.6334,
+     "rho": 0.0928,
+     "ci95": [
+      -0.1815,
+      0.3737
+     ],
+     "pred_median": 86.507,
+     "pred_sd": 21.517
+    },
+    "B2": {
+     "label": "B-kNN (Tanimoto 이온화FP)",
+     "hp": {
+      "k": 5
+     },
+     "inner_spearman": 0.39,
+     "rho": 0.0882,
+     "ci95": [
+      -0.1772,
+      0.3564
+     ],
+     "pred_median": 62.821,
+     "pred_sd": 21.093
+    },
+    "B3": {
+     "label": "B-RF d<=4 (물성 + 유사도요약3)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.6
+     },
+     "inner_spearman": 0.4789,
+     "rho": 0.1141,
+     "ci95": [
+      -0.1398,
+      0.3773
+     ],
+     "pred_median": 70.626,
+     "pred_sd": 9.021
+    },
+    "C1": {
+     "label": "C-KRR (Tanimoto 중성FP ⊕ RBF 이온스칼라)",
+     "hp": {
+      "alpha": 0.01,
+      "w": 0.7
+     },
+     "inner_spearman": 0.573,
+     "rho": 0.0423,
+     "ci95": [
+      -0.233,
+      0.3179
+     ],
+     "pred_median": 80.42,
+     "pred_sd": 26.402
+    },
+    "C2": {
+     "label": "C-kNN (Tanimoto 중성FP)",
+     "hp": {
+      "k": 3
+     },
+     "inner_spearman": 0.3997,
+     "rho": -0.0154,
+     "ci95": [
+      -0.2731,
+      0.2515
+     ],
+     "pred_median": 70.248,
+     "pred_sd": 24.237
+    },
+    "C3": {
+     "label": "C-RF d<=4 (물성 + 이온스칼라 + 유사도요약3)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.3
+     },
+     "inner_spearman": 0.5607,
+     "rho": -0.1574,
+     "ci95": [
+      -0.3991,
+      0.1044
+     ],
+     "pred_median": 74.568,
+     "pred_sd": 13.37
+    }
+   }
+  },
+  "tox24_full": {
+   "n_train": 1500,
+   "n_leak": 0,
+   "n_external_used": 64,
+   "baseline_rho": -0.0227,
+   "baseline_ci": [
+    -0.2802,
+    0.2478
+   ],
+   "models": {
+    "A1": {
+     "label": "A-Ridge (물성20)",
+     "hp": {
+      "alpha": 100.0
+     },
+     "inner_spearman": 0.5441,
+     "rho": -0.0767,
+     "ci95": [
+      -0.3479,
+      0.2135
+     ],
+     "pred_median": 64.32,
+     "pred_sd": 10.909
+    },
+    "A2": {
+     "label": "A-GP(RBF) (물성20)",
+     "hp": {
+      "alpha": 0.1
+     },
+     "inner_spearman": 0.4549,
+     "rho": -0.0321,
+     "ci95": [
+      -0.2944,
+      0.2395
+     ],
+     "pred_median": 84.955,
+     "pred_sd": 19.96
+    },
+    "A3": {
+     "label": "A-RF d<=4 (물성20)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.6
+     },
+     "inner_spearman": 0.555,
+     "rho": 0.2285,
+     "ci95": [
+      -0.027,
+      0.4668
+     ],
+     "pred_median": 71.621,
+     "pred_sd": 8.03
+    },
+    "B1": {
+     "label": "B-KRR (RBF물성 ⊕ Tanimoto 이온화FP)",
+     "hp": {
+      "alpha": 0.1,
+      "w": 0.7
+     },
+     "inner_spearman": 0.6176,
+     "rho": 0.1362,
+     "ci95": [
+      -0.1334,
+      0.4125
+     ],
+     "pred_median": 90.337,
+     "pred_sd": 21.85
+    },
+    "B2": {
+     "label": "B-kNN (Tanimoto 이온화FP)",
+     "hp": {
+      "k": 7
+     },
+     "inner_spearman": 0.4185,
+     "rho": 0.0027,
+     "ci95": [
+      -0.2722,
+      0.2815
+     ],
+     "pred_median": 63.342,
+     "pred_sd": 19.552
+    },
+    "B3": {
+     "label": "B-RF d<=4 (물성 + 유사도요약3)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.6
+     },
+     "inner_spearman": 0.5627,
+     "rho": 0.1405,
+     "ci95": [
+      -0.1152,
+      0.3991
+     ],
+     "pred_median": 69.287,
+     "pred_sd": 8.138
+    },
+    "C1": {
+     "label": "C-KRR (Tanimoto 중성FP ⊕ RBF 이온스칼라)",
+     "hp": {
+      "alpha": 0.1,
+      "w": 0.7
+     },
+     "inner_spearman": 0.586,
+     "rho": 0.0068,
+     "ci95": [
+      -0.2638,
+      0.2814
+     ],
+     "pred_median": 79.608,
+     "pred_sd": 23.224
+    },
+    "C2": {
+     "label": "C-kNN (Tanimoto 중성FP)",
+     "hp": {
+      "k": 7
+     },
+     "inner_spearman": 0.4255,
+     "rho": 0.0103,
+     "ci95": [
+      -0.2625,
+      0.2894
+     ],
+     "pred_median": 63.731,
+     "pred_sd": 19.978
+    },
+    "C3": {
+     "label": "C-RF d<=4 (물성 + 이온스칼라 + 유사도요약3)",
+     "hp": {
+      "max_depth": 4,
+      "max_features": 0.3
+     },
+     "inner_spearman": 0.5929,
+     "rho": -0.1355,
+     "ci95": [
+      -0.3826,
+      0.1222
+     ],
+     "pred_median": 71.346,
+     "pred_sd": 11.427
+    }
+   }
+  }
+ }
+}

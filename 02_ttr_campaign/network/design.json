@@ -1,0 +1,699 @@
+{
+ "유지17": {
+  "keep": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N06",
+   "N07",
+   "N08",
+   "N09",
+   "N10",
+   "N11",
+   "N12",
+   "N13",
+   "N14",
+   "N15",
+   "N16",
+   "N17"
+  ],
+  "base_violations": [
+   "K3",
+   "K4",
+   "K5"
+  ],
+  "n_candidates": 28,
+  "n_easy": 1,
+  "n_hard": 27,
+  "n_optimal_layer": 14,
+  "add": [
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0028",
+    "hard": 1,
+    "dum": 5,
+    "was": ""
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0118",
+    "hard": 1,
+    "dum": 7,
+    "was": ""
+   }
+  ],
+  "n_add": 2,
+  "n_add_hard": 2,
+  "dum_sum": 12,
+  "n_ties": 1,
+  "ties": [
+   [
+    [
+     "CHEMBL240808",
+     "cand0028"
+    ],
+    [
+     "cand0023",
+     "cand0118"
+    ]
+   ]
+  ],
+  "n_edges": 19,
+  "ncyc4": 25,
+  "ncyc5": 46,
+  "npart": {
+   "CHEMBL240808": 17,
+   "CHEMBL241454": 16,
+   "CHEMBL438498": 12,
+   "cand0023": 14,
+   "cand0028": 4,
+   "cand0030": 14,
+   "cand0042": 4,
+   "cand0118": 5,
+   "cand0132": 2,
+   "cand0271": 4
+  },
+  "deg": {
+   "CHEMBL240808": 5,
+   "CHEMBL241454": 5,
+   "CHEMBL438498": 4,
+   "cand0023": 5,
+   "cand0028": 3,
+   "cand0030": 4,
+   "cand0042": 3,
+   "cand0118": 4,
+   "cand0132": 2,
+   "cand0271": 3
+  },
+  "epart_min": 2,
+  "k5": {
+   "ortho": [
+    3,
+    true
+   ],
+   "meta": [
+    2,
+    true
+   ]
+  },
+  "edges": [
+   {
+    "a": "CHEMBL240808",
+    "b": "CHEMBL241454",
+    "name": "N01",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0023",
+    "name": "N02",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 16,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0030",
+    "name": "N03",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 12,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "CHEMBL438498",
+    "name": "N04",
+    "hard": 0,
+    "dum": 1,
+    "cyc5": 12,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0023",
+    "name": "N05",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0030",
+    "name": "N06",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 13,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "CHEMBL438498",
+    "name": "N07",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL438498",
+    "b": "cand0028",
+    "name": "N08",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 11,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL438498",
+    "b": "cand0030",
+    "name": "N09",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 14,
+    "status": "유지"
+   },
+   {
+    "a": "cand0028",
+    "b": "cand0118",
+    "name": "N10",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 8,
+    "status": "유지"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0042",
+    "name": "N11",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 5,
+    "status": "유지"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0030",
+    "name": "N12",
+    "hard": 0,
+    "dum": 1,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "cand0118",
+    "b": "cand0132",
+    "name": "N13",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 2,
+    "status": "유지"
+   },
+   {
+    "a": "cand0118",
+    "b": "cand0271",
+    "name": "N14",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 7,
+    "status": "유지"
+   },
+   {
+    "a": "cand0042",
+    "b": "cand0132",
+    "name": "N15",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 2,
+    "status": "유지"
+   },
+   {
+    "a": "cand0042",
+    "b": "cand0271",
+    "name": "N16",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 5,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0271",
+    "name": "N17",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 8,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0028",
+    "name": "신규",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 11,
+    "status": "추가"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0118",
+    "name": "신규",
+    "hard": 1,
+    "dum": 7,
+    "cyc5": 11,
+    "status": "추가"
+   }
+  ],
+  "before": {
+   "n_edges": 17,
+   "ncyc4": 18,
+   "npart": {
+    "CHEMBL240808": 13,
+    "CHEMBL241454": 14,
+    "CHEMBL438498": 9,
+    "cand0023": 10,
+    "cand0028": 0,
+    "cand0030": 13,
+    "cand0042": 2,
+    "cand0118": 1,
+    "cand0132": 1,
+    "cand0271": 2
+   },
+   "deg": {
+    "CHEMBL240808": 4,
+    "CHEMBL241454": 5,
+    "CHEMBL438498": 4,
+    "cand0023": 4,
+    "cand0028": 2,
+    "cand0030": 4,
+    "cand0042": 3,
+    "cand0118": 3,
+    "cand0132": 2,
+    "cand0271": 3
+   },
+   "epart_min": 1,
+   "epart_lt2": 4,
+   "k5": {
+    "ortho": [
+     1,
+     false
+    ],
+    "meta": [
+     2,
+     true
+    ]
+   }
+  }
+ },
+ "유지14": {
+  "keep": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N06",
+   "N07",
+   "N09",
+   "N10",
+   "N12",
+   "N13",
+   "N15",
+   "N16",
+   "N17"
+  ],
+  "base_violations": [
+   "K2",
+   "K3",
+   "K4",
+   "K5"
+  ],
+  "n_candidates": 31,
+  "n_easy": 1,
+  "n_hard": 30,
+  "n_optimal_layer": 818,
+  "add": [
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0028",
+    "hard": 1,
+    "dum": 5,
+    "was": ""
+   },
+   {
+    "a": "CHEMBL438498",
+    "b": "cand0028",
+    "hard": 1,
+    "dum": 4,
+    "was": "N08"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0042",
+    "hard": 1,
+    "dum": 4,
+    "was": "N11"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0118",
+    "hard": 1,
+    "dum": 7,
+    "was": ""
+   },
+   {
+    "a": "cand0118",
+    "b": "cand0271",
+    "hard": 1,
+    "dum": 4,
+    "was": "N14"
+   }
+  ],
+  "n_add": 5,
+  "n_add_hard": 5,
+  "dum_sum": 24,
+  "n_ties": 1,
+  "ties": [
+   [
+    [
+     "CHEMBL240808",
+     "cand0028"
+    ],
+    [
+     "CHEMBL438498",
+     "cand0028"
+    ],
+    [
+     "cand0023",
+     "cand0042"
+    ],
+    [
+     "cand0023",
+     "cand0118"
+    ],
+    [
+     "cand0118",
+     "cand0271"
+    ]
+   ]
+  ],
+  "n_edges": 19,
+  "ncyc4": 25,
+  "ncyc5": 46,
+  "npart": {
+   "CHEMBL240808": 17,
+   "CHEMBL241454": 16,
+   "CHEMBL438498": 12,
+   "cand0023": 14,
+   "cand0028": 4,
+   "cand0030": 14,
+   "cand0042": 4,
+   "cand0118": 5,
+   "cand0132": 2,
+   "cand0271": 4
+  },
+  "deg": {
+   "CHEMBL240808": 5,
+   "CHEMBL241454": 5,
+   "CHEMBL438498": 4,
+   "cand0023": 5,
+   "cand0028": 3,
+   "cand0030": 4,
+   "cand0042": 3,
+   "cand0118": 4,
+   "cand0132": 2,
+   "cand0271": 3
+  },
+  "epart_min": 2,
+  "k5": {
+   "ortho": [
+    3,
+    true
+   ],
+   "meta": [
+    2,
+    true
+   ]
+  },
+  "edges": [
+   {
+    "a": "CHEMBL240808",
+    "b": "CHEMBL241454",
+    "name": "N01",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0023",
+    "name": "N02",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 16,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0030",
+    "name": "N03",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 12,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "CHEMBL438498",
+    "name": "N04",
+    "hard": 0,
+    "dum": 1,
+    "cyc5": 12,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0023",
+    "name": "N05",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0030",
+    "name": "N06",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 13,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "CHEMBL438498",
+    "name": "N07",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL438498",
+    "b": "cand0028",
+    "name": "N08",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 11,
+    "status": "추가"
+   },
+   {
+    "a": "CHEMBL438498",
+    "b": "cand0030",
+    "name": "N09",
+    "hard": 0,
+    "dum": 4,
+    "cyc5": 14,
+    "status": "유지"
+   },
+   {
+    "a": "cand0028",
+    "b": "cand0118",
+    "name": "N10",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 8,
+    "status": "유지"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0042",
+    "name": "N11",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 5,
+    "status": "추가"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0030",
+    "name": "N12",
+    "hard": 0,
+    "dum": 1,
+    "cyc5": 15,
+    "status": "유지"
+   },
+   {
+    "a": "cand0118",
+    "b": "cand0132",
+    "name": "N13",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 2,
+    "status": "유지"
+   },
+   {
+    "a": "cand0118",
+    "b": "cand0271",
+    "name": "N14",
+    "hard": 1,
+    "dum": 4,
+    "cyc5": 7,
+    "status": "추가"
+   },
+   {
+    "a": "cand0042",
+    "b": "cand0132",
+    "name": "N15",
+    "hard": 0,
+    "dum": 2,
+    "cyc5": 2,
+    "status": "유지"
+   },
+   {
+    "a": "cand0042",
+    "b": "cand0271",
+    "name": "N16",
+    "hard": 0,
+    "dum": 3,
+    "cyc5": 5,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL241454",
+    "b": "cand0271",
+    "name": "N17",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 8,
+    "status": "유지"
+   },
+   {
+    "a": "CHEMBL240808",
+    "b": "cand0028",
+    "name": "신규",
+    "hard": 1,
+    "dum": 5,
+    "cyc5": 11,
+    "status": "추가"
+   },
+   {
+    "a": "cand0023",
+    "b": "cand0118",
+    "name": "신규",
+    "hard": 1,
+    "dum": 7,
+    "cyc5": 11,
+    "status": "추가"
+   }
+  ],
+  "before": {
+   "n_edges": 14,
+   "ncyc4": 16,
+   "npart": {
+    "CHEMBL240808": 13,
+    "CHEMBL241454": 13,
+    "CHEMBL438498": 9,
+    "cand0023": 9,
+    "cand0028": 0,
+    "cand0030": 13,
+    "cand0042": 0,
+    "cand0118": 0,
+    "cand0132": 0,
+    "cand0271": 0
+   },
+   "deg": {
+    "CHEMBL240808": 4,
+    "CHEMBL241454": 5,
+    "CHEMBL438498": 3,
+    "cand0023": 3,
+    "cand0028": 1,
+    "cand0030": 4,
+    "cand0042": 2,
+    "cand0118": 2,
+    "cand0132": 2,
+    "cand0271": 2
+   },
+   "epart_min": 0,
+   "epart_lt2": 5,
+   "k5": {
+    "ortho": [
+     0,
+     false
+    ],
+    "meta": [
+     1,
+     false
+    ]
+   }
+  }
+ },
+ "meta": {
+  "at": "2026-10-05T07:08:47+09:00",
+  "script_sha256": "cf307ee40a6b7e43e354b29711f6ceb8135bffdc9ae81dcb317df83494fd803b",
+  "regkey": "network_redesign_paper_only_v37",
+  "nodes": [
+   "CHEMBL240808",
+   "CHEMBL241454",
+   "CHEMBL438498",
+   "cand0023",
+   "cand0028",
+   "cand0030",
+   "cand0042",
+   "cand0118",
+   "cand0132",
+   "cand0271"
+  ],
+  "pat": {
+   "CHEMBL240808": "para",
+   "CHEMBL241454": "para",
+   "CHEMBL438498": "para",
+   "cand0023": "para",
+   "cand0028": "ortho",
+   "cand0030": "para",
+   "cand0042": "meta",
+   "cand0118": "ortho",
+   "cand0132": "meta",
+   "cand0271": "meta"
+  },
+  "flagged": [
+   "N08",
+   "N11",
+   "N14"
+  ],
+  "criteria": {
+   "MAXDEG": 5,
+   "MAXADD": 7,
+   "L_NODE": 4,
+   "L_EDGE": 5
+  }
+ }
+}
