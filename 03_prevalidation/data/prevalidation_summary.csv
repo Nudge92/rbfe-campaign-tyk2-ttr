@@ -1,0 +1,26 @@
+metric,name,value,n_actives,n_decoys,source
+roc_auc,AtomPair fingerprint,0.736,53,2650,similarity_all_fp_v2.csv
+roc_auc,TopoTorsion fingerprint,0.7107,53,2650,similarity_all_fp_v2.csv
+roc_auc,MACCS fingerprint,0.6835,53,2650,similarity_all_fp_v2.csv
+roc_auc,ECFP4 fingerprint,0.6074,53,2650,similarity_all_fp_v2.csv
+roc_auc,Docking ligand efficiency,0.4337,53,2640,docking_scores.csv
+roc_auc,Docking score (E_best),0.3484,53,2640,docking_scores.csv
+pair_accuracy,benzophenone MM/GBSA (8 pairs),0.25,,8,benzophenone_pairs.csv
+pair_accuracy,diphenylether MM/GBSA (기록용) [큰쪽] (21 pairs),0.7143,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether MW 단독 [큰쪽] (21 pairs),0.7619,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether TPSA 단독 [큰쪽] (21 pairs),0.5476,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether cLogP 단독 [큰쪽] (21 pairs),0.5714,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether 리간드 RMSD [큰쪽] (21 pairs),0.5238,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether 접촉 유지 [큰쪽] (21 pairs),0.5714,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether 중원자 단독 [큰쪽] (21 pairs),0.8095,,21,diphenylether_pairs.csv
+pair_accuracy,diphenylether 최소화-only (기록용) [큰쪽] (21 pairs),0.5714,,21,diphenylether_pairs.csv
+pair_accuracy,scaffold-wide Borda(1:1) 53내순위 [LOO] micro (43 pairs),0.6279,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide Borda(1:1) 53내순위 [LOO] macro (43 pairs),0.5095,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide AtomPair 단독 [LOO] micro (43 pairs),0.7907,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide AtomPair 단독 [LOO] macro (43 pairs),0.781,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide AtomPair 단독 [LSO] micro (43 pairs),0.5349,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide AtomPair 단독 [LSO] macro (43 pairs),0.4893,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide 중원자 단독 [LOO] micro (43 pairs),0.5349,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide 중원자 단독 [LOO] macro (43 pairs),0.3744,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide MW 단독 [LOO] micro (43 pairs),0.5581,,43,scaffold_pairs.csv
+pair_accuracy,scaffold-wide MW 단독 [LOO] macro (43 pairs),0.469,,43,scaffold_pairs.csv
