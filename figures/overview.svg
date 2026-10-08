@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 772" width="900" height="772" role="img" aria-labelledby="ttl desc">
+<title id="ttl">TTR 캠페인 전체 흐름 — 관문 두 개</title>
+<desc id="desc">목표에서 판정까지의 수직 흐름도. 관문 1(TYK2 자격 검사)은 RMSE 0.793으로 통과했고, 지표 사전검증에서 도킹 축이 탈락해 리간드 기반으로 교체했으며, 후보는 58,940에서 7로 좁혀졌고, FEP 10노드 17엣지를 돌린 뒤 관문 2(공시험)에서 −3.87로 실패해 후보 순위를 보고하지 않았다.</desc>
+
+<style>
+  :root{
+    --fg:#1f2328; --muted:#656d76; --line:#d0d7de;
+    --card:#f6f8fa; --cardline:#d8dee4;
+    --pass:#1a7f37; --passbg:#dafbe1;
+    --fail:#cf222e; --failbg:#ffebe9;
+    --accent:#0969da; --neutral:#8c959f;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --fg:#e6edf3; --muted:#9198a1; --line:#3d444d;
+      --card:#151b23; --cardline:#3d444d;
+      --pass:#3fb950; --passbg:#12261e;
+      --fail:#f85149; --failbg:#25171c;
+      --accent:#58a6ff; --neutral:#6e7681;
+    }
+  }
+  text{font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR','Noto Sans CJK KR',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;}
+  .h1{font-size:18px;font-weight:700;fill:var(--fg);}
+  .h2{font-size:12.5px;fill:var(--muted);}
+  .lbl{font-size:10.5px;font-weight:600;fill:var(--muted);letter-spacing:.08em;}
+  .ct{font-size:14.5px;font-weight:700;fill:var(--fg);}
+  .bd{font-size:12.5px;fill:var(--muted);}
+  .note{font-size:11.5px;fill:var(--accent);}
+  .num{font-size:14px;font-weight:700;fill:var(--fg);}
+  .nlb{font-size:10.5px;fill:var(--muted);}
+  .bg-t{font-size:12px;font-weight:700;}
+  .card{fill:var(--card);stroke:var(--cardline);stroke-width:1;}
+  .rail{fill:var(--neutral);}
+  .rail-p{fill:var(--pass);}
+  .rail-f{fill:var(--fail);}
+  .sep{stroke:var(--line);stroke-width:1;}
+  .arr{stroke:var(--line);stroke-width:1.5;fill:none;}
+  .ah{fill:var(--line);}
+  .fsep{stroke:var(--line);stroke-width:1;}
+</style>
+
+<defs>
+  <marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+    <path class="ah" d="M0 0.5 L7.5 4 L0 7.5 Z"/>
+  </marker>
+  <clipPath id="c1"><rect x="24" y="90" width="852" height="84" rx="8"/></clipPath>
+  <clipPath id="c2"><rect x="24" y="194" width="852" height="100" rx="8"/></clipPath>
+  <clipPath id="c3"><rect x="24" y="314" width="852" height="152" rx="8"/></clipPath>
+  <clipPath id="c4"><rect x="24" y="486" width="852" height="66" rx="8"/></clipPath>
+  <clipPath id="c5"><rect x="24" y="572" width="852" height="84" rx="8"/></clipPath>
+  <clipPath id="c6"><rect x="24" y="676" width="852" height="76" rx="8"/></clipPath>
+</defs>
+
+<!-- 머리말 -->
+<text class="h1" x="24" y="32">TTR 사량체 안정화제를 FEP로 고른다</text>
+<text class="h2" x="24" y="54">ATTR 아밀로이드증 · 사량체 해리 억제 · 상대결합 자유에너지(RBFE) 계산</text>
+<line class="sep" x1="24" y1="70" x2="876" y2="70"/>
+
+<!-- 관문 1 -->
+<rect class="card" x="24" y="90" width="852" height="84" rx="8"/>
+<g clip-path="url(#c1)"><rect class="rail-p" x="24" y="90" width="4" height="84"/></g>
+<text class="lbl" x="48" y="112">관문 1 — 파이프라인 자격 검사</text>
+<text class="ct" x="48" y="134">TYK2 벤치마크</text>
+<text class="bd" x="48" y="156">실험값 보유 6 엣지 · RMSE 0.793 kcal/mol (95% CI 0.434–1.053) · 부호 일치 6/6</text>
+<rect x="788" y="118" width="64" height="26" rx="13" fill="var(--passbg)" stroke="var(--pass)" stroke-width="1"/>
+<text class="bg-t" x="820" y="135" text-anchor="middle" fill="var(--pass)">통과</text>
+
+<path class="arr" d="M450 174 L450 190" marker-end="url(#a)"/>
+
+<!-- 지표 사전검증 -->
+<rect class="card" x="24" y="194" width="852" height="100" rx="8"/>
+<g clip-path="url(#c2)"><rect class="rail" x="24" y="194" width="4" height="100"/></g>
+<text class="lbl" x="48" y="216">지표 사전검증</text>
+<text class="ct" x="48" y="238">쓸 축과 못 쓸 축을 먼저 쟀다</text>
+<text class="bd" x="48" y="260">활성 53종 + 물성 정합 decoy 2,650종</text>
+<text class="bd" x="48" y="280">도킹 ROC-AUC 0.3484 (무작위 0.5 미만) → 탈락 · AtomPair 0.7360 → 채택</text>
+<rect x="712" y="228" width="140" height="26" rx="13" fill="none" stroke="var(--cardline)" stroke-width="1"/>
+<text class="bg-t" x="782" y="245" text-anchor="middle" fill="var(--muted)">순위축 교체</text>
+
+<path class="arr" d="M450 294 L450 310" marker-end="url(#a)"/>
+
+<!-- 후보 설계 -->
+<rect class="card" x="24" y="314" width="852" height="152" rx="8"/>
+<g clip-path="url(#c3)"><rect class="rail" x="24" y="314" width="4" height="152"/></g>
+<text class="lbl" x="48" y="336">후보 설계</text>
+<text class="ct" x="48" y="358">58,940에서 7로</text>
+<line class="fsep" x1="48" y1="372" x2="852" y2="372"/>
+
+<text class="num" x="70"  y="400" text-anchor="middle">58,940</text>
+<text class="num" x="197" y="400" text-anchor="middle">20,564</text>
+<text class="num" x="323" y="400" text-anchor="middle">18,864</text>
+<text class="num" x="450" y="400" text-anchor="middle">18,167</text>
+<text class="num" x="577" y="400" text-anchor="middle">300</text>
+<text class="num" x="703" y="400" text-anchor="middle">8</text>
+<text class="num" x="830" y="400" text-anchor="middle">7</text>
+
+<text class="nlb" x="70"  y="419" text-anchor="middle">생성 3종</text>
+<text class="nlb" x="197" y="419" text-anchor="middle">사전필터</text>
+<text class="nlb" x="323" y="419" text-anchor="middle">중복 제거</text>
+<text class="nlb" x="450" y="419" text-anchor="middle">Butina 군집</text>
+<text class="nlb" x="577" y="419" text-anchor="middle">QSAR 합의</text>
+<text class="nlb" x="703" y="419" text-anchor="middle">화학형</text>
+<text class="nlb" x="830" y="419" text-anchor="middle">전하 −1층</text>
+
+<path class="arr" d="M108 395 L156 395" marker-end="url(#a)"/>
+<path class="arr" d="M235 395 L283 395" marker-end="url(#a)"/>
+<path class="arr" d="M361 395 L409 395" marker-end="url(#a)"/>
+<path class="arr" d="M488 395 L543 395" marker-end="url(#a)"/>
+<path class="arr" d="M605 395 L678 395" marker-end="url(#a)"/>
+<path class="arr" d="M722 395 L805 395" marker-end="url(#a)"/>
+
+<text class="note" x="48" y="449">화학형 조건(디페닐에터 ∩ 카복실산)만으로 118개가 남는다 — QSAR 상위 300이 그중 8개를 집었다</text>
+
+<path class="arr" d="M450 466 L450 482" marker-end="url(#a)"/>
+
+<!-- FEP -->
+<rect class="card" x="24" y="486" width="852" height="66" rx="8"/>
+<g clip-path="url(#c4)"><rect class="rail" x="24" y="486" width="4" height="66"/></g>
+<text class="lbl" x="48" y="508">FEP 섭동 네트워크</text>
+<text class="bd" x="48" y="532">10 노드 (설계 후보 7 + 실험 결합력 보유 앵커 3) · 17 엣지 · 엣지당 독립 반복 3–5회</text>
+
+<path class="arr" d="M450 552 L450 568" marker-end="url(#a)"/>
+
+<!-- 관문 2 -->
+<rect class="card" x="24" y="572" width="852" height="84" rx="8"/>
+<g clip-path="url(#c5)"><rect class="rail-f" x="24" y="572" width="4" height="84"/></g>
+<text class="lbl" x="48" y="594">관문 2 — 공시험 (blank test)</text>
+<text class="ct" x="48" y="616">실험 결합력이 같은 두 화합물, 참값 ΔΔG = 0</text>
+<text class="bd" x="48" y="638">−3.87 ± 0.31 kcal/mol · 사전등재 합격선 &gt; 2.0 = “ΔΔG를 발표하지 않는다”</text>
+<rect x="788" y="600" width="64" height="26" rx="13" fill="var(--failbg)" stroke="var(--fail)" stroke-width="1"/>
+<text class="bg-t" x="820" y="617" text-anchor="middle" fill="var(--fail)">실패</text>
+
+<path class="arr" d="M450 656 L450 672" marker-end="url(#a)"/>
+
+<!-- 판정 -->
+<rect class="card" x="24" y="676" width="852" height="76" rx="8"/>
+<g clip-path="url(#c6)"><rect class="rail-f" x="24" y="676" width="4" height="76"/></g>
+<text class="lbl" x="48" y="698">판정</text>
+<text class="ct" x="48" y="720">후보 순위를 보고하지 않는다</text>
+<text class="bd" x="48" y="742">공시험 값을 이 계의 분해능 하한(≈ 3.9 kcal/mol)으로 선언 — 계산을 버린 것이 아니다</text>
+</svg>
