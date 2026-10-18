@@ -1,0 +1,248 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>poster</title>
+<style>
+@page { size: 950mm 1500mm; margin: 0 }
+:root{
+  --ink:#15202B; --ink2:#3E4C57; --mute:#6E7A83; --line:#D5DCD6;
+  --teal:#1A6460; --teal-s:#E4EFEE; --teal-l:#9DC6C2; --teal-b:#8FD4CE;
+  --amber:#B4652A; --amber-s:#FBF0E3; --amber-l:#E0C3A2; --amber-b:#EFB173;
+  --bg:#FFFFFF; --sunk:#F3F5F2; --paper:#F4F7F4;
+  --sans:'Noto Sans CJK KR','Noto Sans KR',sans-serif;
+  --mono:'DejaVu Sans Mono',monospace;
+  --fig-tox:244mm; --fig-fun:276mm; --fig-cand:132mm;
+  --fig-ovl:196mm; --fig-lim:173mm;
+  --fig-pkt:174mm; --fig-net:184mm;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:950mm;height:1500mm;background:var(--bg);color:var(--ink);
+     font-family:var(--sans);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.page{padding:22mm 26mm 16mm;height:1500mm;display:flex;flex-direction:column;gap:5.5mm}
+
+/* ── 헤더 ── */
+header{border-bottom:2.6mm solid var(--ink);padding-bottom:4.5mm}
+.kicker{font-size:24pt;font-weight:700;letter-spacing:.22em;color:var(--teal);margin-bottom:3mm}
+h1{font-size:75pt;font-weight:900;line-height:1.07;letter-spacing:-.02em}
+h1 .sub{display:block;font-size:38pt;font-weight:700;color:var(--ink2);
+        margin-top:3.8mm;letter-spacing:-.008em;line-height:1.28}
+.byline{margin-top:4.5mm;display:flex;align-items:baseline;gap:7mm;font-size:27pt;color:var(--ink2)}
+.byline b{font-size:33pt;font-weight:700;color:var(--ink)}
+
+/* ── 결론 띠 ── */
+.lede{background:var(--ink);color:var(--paper);padding:8mm 10.5mm;border-radius:3.5mm;
+      font-size:27.5pt;line-height:1.42;font-weight:400}
+.lede b{color:var(--teal-b);font-weight:700}
+.lede .warn{color:var(--amber-b);font-weight:700}
+
+/* ── 격자 ── */
+.row{display:grid;gap:5.5mm}
+.r-a{grid-template-columns:0.74fr 1.26fr}
+.r-b{grid-template-columns:1.30fr 0.70fr}
+.card{background:var(--bg);border:0.7mm solid var(--line);border-radius:3.5mm;
+      padding:5mm 6mm;display:flex;flex-direction:column;gap:3.4mm;min-width:0}
+.card.tint{background:var(--sunk);border-color:transparent}
+h2{font-size:34pt;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:4mm}
+h2 i{font-family:var(--mono);font-size:23pt;font-weight:700;color:var(--teal);font-style:normal}
+p,li{font-size:23pt;line-height:1.45;color:var(--ink2)}
+p b,li b{color:var(--ink);font-weight:700}
+ul{list-style:none;display:flex;flex-direction:column;gap:2.4mm}
+ul li{position:relative;padding-left:6.5mm}
+ul li::before{content:'';position:absolute;left:0;top:3.1mm;width:2.8mm;height:2.8mm;
+              border-radius:50%;background:var(--teal-l)}
+figure{margin:0;text-align:center}
+figure img{display:block;margin:0 auto;max-width:100%;width:auto;height:auto;border-radius:2.5mm}
+figure img.bd{border:0.7mm solid var(--line)}
+figcaption{margin-top:3.2mm;font-size:20pt;line-height:1.38;color:var(--mute);text-align:left}
+figcaption b{color:var(--teal);font-weight:700}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.in2{display:grid;grid-template-columns:0.70fr 0.30fr;gap:7mm;align-items:center}
+.in2b{display:grid;grid-template-columns:0.465fr 0.535fr;gap:7mm;align-items:start}
+.next{list-style:none;counter-reset:n;display:flex;flex-direction:column;flex:1;gap:0}
+.next li{counter-increment:n;font-size:24pt;line-height:1.46;color:var(--ink2);
+  flex:1;display:flex;flex-direction:column;justify-content:center;padding:4.5mm 0}
+.next li+li{border-top:0.5mm solid var(--line)}
+.next li b{display:block;color:var(--ink);font-weight:700;font-size:25pt;margin-bottom:1.6mm}
+.next li b::before{content:'0'counter(n)'\00a0\00a0\00a0';font-family:var(--mono);
+  font-size:21pt;font-weight:700;color:var(--teal)}
+.note{background:var(--teal-s);border-radius:2.5mm;padding:4.5mm 5mm}
+.note h3{font-size:21pt;font-weight:700;color:var(--teal);margin-bottom:2mm}
+.note p{font-size:21pt;line-height:1.42;color:var(--ink2)}
+.gens{display:flex;flex-direction:column;gap:3.4mm}
+.gens div{font-size:21pt;line-height:1.38;color:var(--ink2)}
+.gens b{display:block;color:var(--teal);font-weight:700;font-size:22.5pt;margin-bottom:0.6mm}
+
+/* ── 수치 칩 ── */
+.chips{display:flex;gap:3.5mm}
+.chip{flex:1;background:var(--amber-s);border:0.7mm solid var(--amber-l);border-radius:2.5mm;
+      padding:3.6mm 4mm;text-align:center}
+.chip b{display:block;font-size:31pt;font-weight:800;color:var(--amber);line-height:1.08}
+.chip span{display:block;font-size:17.5pt;color:var(--ink2);margin-top:1.4mm}
+
+/* ── 잔기 ── */
+.chain{font-size:20pt;font-weight:700;color:var(--ink);margin-bottom:1.6mm}
+.res{display:flex;flex-wrap:wrap;gap:2mm;margin-bottom:3mm}
+.res span{background:var(--teal-s);color:var(--teal);border-radius:1.8mm;
+          padding:2.4mm 3.4mm;font-size:19pt;font-weight:700;font-family:var(--mono)}
+
+/* ── 분기 ── */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.split div{background:var(--sunk);border-radius:2.5mm;padding:3.6mm 4.5mm}
+.split h3{font-size:20pt;font-weight:700;color:var(--teal);margin-bottom:1.6mm}
+.split p{font-size:21pt;font-family:var(--mono);color:var(--ink);font-weight:700}
+
+/* ── 푸터 ── */
+footer{display:grid;grid-template-columns:1.3fr 0.92fr 0.40fr;gap:6mm;
+       border-top:0.8mm solid var(--line);padding-top:5mm;margin-top:auto}
+footer h4{font-size:19pt;font-weight:700;color:var(--teal);letter-spacing:.14em;margin-bottom:2.4mm}
+footer p,footer li{font-size:17pt;line-height:1.38;color:var(--ink2)}
+footer ol{list-style:none;counter-reset:r;display:flex;flex-direction:column;gap:1.6mm}
+footer ol li{counter-increment:r;position:relative;padding-left:6mm}
+footer ol li::before{content:counter(r)'.';position:absolute;left:0;color:var(--teal);font-weight:700}
+.qr{text-align:center}
+.qr img{width:28mm;height:28mm;display:block;margin:0 auto 2mm}
+.qr span{font-size:14.5pt;color:var(--mute);line-height:1.3;display:block}
+</style></head><body><div class="page">
+
+<header>
+  <div class="kicker">계산 기반 신약 설계</div>
+  <h1>독성에서 치료제로
+    <span class="sub">환경 화학물질의 TTR 결합 데이터를 이용한 사량체 안정화제 후보 설계</span>
+  </h1>
+  <div class="byline"><b>문승재</b><span>충북대학교</span></div>
+</header>
+
+<div class="lede">
+  환경 화학물질의 TTR 결합 데이터로 세운 QSAR 모델과 생성 모델 <b>3종</b>으로 <b>58,940종</b>을
+  설계해 <b>7종</b>을 선별했고, 일곱 모두 승인약 <b>타파미디스와 같은 결합 자리</b>를 점유했다.
+  다만 자유에너지 계산이 <span class="warn">답이 0인 대조 조합에서 −3.87 kcal/mol</span>을 내놓아
+  후보 간 순위 판정에 미달하므로 <span class="warn">순위는 보고하지 않는다</span>.
+</div>
+
+<div class="row r-a">
+  <section class="card">
+    <h2><i>01</i>표적</h2>
+    <ul>
+      <li>TTR 사량체가 해리되면 단량체가 응집해 <b>ATTR 아밀로이드증</b>으로 진행한다</li>
+      <li>사량체 중앙을 관통하는 <b>티록신(T4) 결합 통로</b>를 점유하면 해리가 억제된다 —
+        <b>동역학적 안정화</b></li>
+      <li>승인약 <b>타파미디스·아코라미디스</b>가 모두 이 기전으로 작용한다</li>
+      <li>같은 통로에 <b>환경 화학물질</b>도 결합한다 — 그쪽에서는 <b>갑상샘 교란 독성</b>으로
+        분류된다</li>
+    </ul>
+    <figure>
+      <img class="bd" src="fig/pocket_empty_c.png" style="max-height:var(--fig-pkt)" alt="">
+      <figcaption>사량체 중앙의 T4 결합 통로 — 승인약과 환경 화학물질이 공유하는 자리.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card tint">
+    <h2><i>02</i>착안 — 독성 데이터를 치료제 설계로</h2>
+    <figure><img src="fig/tox24.png" style="max-height:var(--fig-tox)" alt=""></figure>
+    <p>2024년 <b>Tox24 Challenge</b>가 공개한 EPA 시험 화학물질 <b>1,512종</b>의 TTR 결합
+      데이터를 치료제 후보 설계에 <b>역으로</b> 사용했다.</p>
+  </section>
+</div>
+
+<section class="card">
+  <h2><i>03</i>설계와 선별</h2>
+  <div class="in2">
+    <figure><img src="fig/funnel.png" style="max-height:var(--fig-fun)" alt=""></figure>
+    <div style="display:flex;flex-direction:column;gap:4mm">
+      
+      <div class="gens">
+        <div><b>DiffSBDD</b>포켓 모양을 보고 분자를 만든다</div>
+        <div><b>Pocket2Mol</b>포켓 안에 원자를 하나씩 붙인다</div>
+        <div><b>REINVENT</b>점수를 주고 강화학습으로 맞춰간다</div>
+      </div>
+      <p>남은 7종의 Murcko 골격은 <b>전부 동일(다이페닐 에터)</b>하다 — 다만 환경 화학물질로
+        학습한 모델이므로 해당 계열로의 수렴은 <b>예상된 결과</b>다.</p>
+      <p>여덟 종까지 좁힌 뒤 pH 7.4에서 전하가 <b>−2였던 한 종을 제외</b>해 <b>−1로 통일</b>했다.
+        전하가 다르면 비교 조건이 달라지기 때문이다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2><i>04</i>최종 후보 7종</h2>
+  <figure><img src="fig/cands7.png" style="max-height:var(--fig-cand)" alt=""></figure>
+  <div class="split">
+    <div><h3>LYS15와 염다리 형성 — 4종</h3><p>0023 · 0030 · 0042 · 0271</p></div>
+    <div><h3>형성하지 않음 — 3종</h3><p>0028 · 0118 · 0132</p></div>
+  </div>
+  <figcaption>번호는 선별 단계의 식별자이며 결합력 순위가 아니다.
+    결합 양상이 두 갈래로 갈려 <b>양쪽을 모두 후보에 남겼다</b>.</figcaption>
+</section>
+
+<div class="row" style="grid-template-columns:0.44fr 0.56fr">
+  <section class="card">
+    <h2><i>05</i>구조 확인</h2>
+    <figure>
+      <img class="bd" src="fig/overlay_3mi_c.png" style="max-height:var(--fig-ovl)" alt="">
+      <figcaption>타파미디스(<b>주황</b>)와 최종 후보 7종의 중첩. 동일 통로에 동일 방향으로
+        결합하며, 접촉 잔기 <b>8개가 모두 겹친다</b>.</figcaption>
+    </figure>
+    <div class="chips">
+      <div class="chip"><b>8</b><span>7종이 모두 접촉한 공통 잔기</span></div>
+      <div class="chip"><b>16 : 11–14</b><span>타파미디스 : 후보 접촉 수</span></div>
+    </div>
+    <p>접촉 수는 승인약이 더 많다.
+      <b>개수만으로 결합력의 우열은 판단할 수 없다.</b></p>
+  </section>
+
+  <section class="card tint">
+    <h2><i>06</i>결합력 계산</h2>
+    <figure><img src="fig/network.png" style="max-height:var(--fig-net)" alt=""></figure>
+    <div class="chips">
+      <div class="chip"><b>4,269회</b><span>선 하나를 수십 단계로 쪼개 돌린 횟수 (45쌍 중 17쌍)</span></div>
+      <div class="chip"><b>14일 · GPU 7대</b><span>동시에 돌린 최대 구성</span></div>
+      <div class="chip"><b>2 / 17</b><span>다시 돌려 값이 재현된 쌍</span></div>
+    </div>
+    <figcaption><b>자유에너지 섭동(FEP)</b> — GROMACS λ-HREMD · pmx · MBAR</figcaption>
+  </section>
+</div>
+
+<div class="row" style="grid-template-columns:0.55fr 0.45fr">
+  <section class="card">
+    <h2><i>07</i>검증과 한계</h2>
+    <figure><img src="fig/limits.png" style="max-height:var(--fig-lim)" alt=""></figure>
+    <figcaption>두 사유로 후보 간 순위는 보고하지 않고
+      <b>7종 전부를 실험 검증 대상으로 넘겼다</b>.</figcaption>
+  </section>
+
+  <section class="card tint">
+    <h2><i>08</i>추후 과제</h2>
+    <ol class="next">
+      <li><b>승인약과 직접 비교하기</b>
+        타파미디스와는 구조만 비교했다. 계산에 함께 넣어 결합력을 맞붙여 봐야 한다.</li>
+      <li><b>계산 오차의 원인 찾기</b>
+        답을 아는 세 조합의 오차가 <span class="mono" style="white-space:nowrap">−3.87 / +2.53 / −2.09</span>로 제각각이다.
+        한쪽으로 치우친 게 아니라서 빼서 맞출 수도 없다. 원인을 찾고 다른 계산법으로도 재본다.</li>
+      <li><b>두 번째 결합 자리 계산하기</b>
+        한 자리가 찬 상태에서 두 번째 분자를 넣는 계산을 따로 돌리면 Kd2를 얻는다.</li>
+      <li><b>합성하고 실험으로 확인하기</b>
+        합성 경로를 짜고, 실제로 만들어 TTR 결합과 섬유 생성 억제를 측정한다.</li>
+    </ol>
+  </section>
+</div>
+
+<footer>
+  <div>
+    <h4>결론</h4>
+    <p>환경 독성 평가용 데이터로 세운 모델을 치료제 후보 설계에 역으로 적용해 후보 7종을 얻었고,
+      구조적으로 승인약과 동일한 결합 자리 점유를 확인했다. 자유에너지 계산의 신뢰 구간이
+      순위 판정에 미달함을 대조 조합으로 확인하여, 순위 대신 <b>7종 전부</b>를 실험으로 넘겼다.</p>
+  </div>
+  <div>
+    <h4>참고문헌</h4>
+    <ol>
+      <li>Palaninathan SK. <i>Curr Med Chem.</i> 2012;19(15).</li>
+      <li>Wiseman RL et al. <i>J Am Chem Soc.</i> 2005;127:5540.</li>
+      <li>Bulawa CE et al. <i>PNAS.</i> 2012;109:9629.</li>
+      <li>Tox24 Challenge, ochem.eu (2024).</li>
+    </ol>
+  </div>
+  <div class="qr">
+    <img src="fig/qr.png" alt="">
+    <span>계산 설정 · 원자료<br>github.com/Nudge92</span>
+  </div>
+</footer>
+
+</div></body></html>

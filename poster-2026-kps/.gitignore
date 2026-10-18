@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+node_modules/
+poster_95x150.pdf
+*.bak
