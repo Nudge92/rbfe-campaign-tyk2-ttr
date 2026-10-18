@@ -252,6 +252,7 @@ GAFF2 / AM1-BCC · TIP3P 명시적 용매
 [`01_tyk2_validation/`](01_tyk2_validation/) 벤치마크 검증 · [`02_ttr_campaign/`](02_ttr_campaign/) 신규 표적(사전 등재 문서 포함) · [`03_prevalidation/`](03_prevalidation/) 지표 사전 검증 · [`figures/`](figures/). 각 폴더에 그 폴더가 무엇인지 적은 README가 있습니다. 궤적·에너지 파일은 용량 때문에 넣지 않았고, 수치를 뒷받침하는 설정·스크립트·결과표만 올렸습니다.
 
 ### 6-3 발표
+→ [포스터 전문·원자료 보기](poster-2026-kps/)
 
 대한약학회 80주년 기념 국제학술대회(2026.10.23–25) 포스터 발표 — **2026.10.24**
 
